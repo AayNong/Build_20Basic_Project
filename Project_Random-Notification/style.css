@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+*{
+    font-family: "Kanit", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body{
+    background: #FFDAFD ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.btn{
+    background: #FFBCF5;
+    color: black;
+    font-weight: bold; /* ให้ข้อความเป็นตัวหนา */
+    padding: 1rem;
+    border-radius: 5px;
+    border: none; /* ปิดเส้นขอบ */
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn:active{
+    transform: scale(0.98); /* พอกดปุ่มมันจะยุบลงไป */
+}
+
+.container{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.notification{
+    background: #FFBCF5;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    margin: 0.3rem;
+    color: #FF0000 ;
+}

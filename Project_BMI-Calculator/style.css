@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&display=swap');
+
+*{
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right,#ACF6F3,#E5E5E5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    width: 30rem;
+    max-width: 800px;
+    background: #00A0ED;
+    padding: 1rem;
+    color: white;
+    border-radius: 20px;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+form{
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+form>*{
+    padding-bottom: 1.2rem;
+}
+
+input,button{
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.btn{
+    background-color: #0071FF;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.result{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.7rem;
+    border-radius: 15px;
+}

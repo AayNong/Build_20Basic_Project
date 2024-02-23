@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
+*{
+    font-family: 'Prompt', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.gallery{
+    display: grid; /* เปลี่ยนเป็นแบบตาราง */
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr)); /* การโหลดภาพใหม่ให้เป็น auto เล็กสุดใหญ่สุด = 350px */
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.modal{
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed; /* ล็อกไว้กลางหน้าจอ */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* ไม่สามารถ คลิกได้ */
+    opacity: 0; /* ซ่อนไว้ก่อนนนน */
+    transition: all 0.3 ease-in-out; /* ทำให้มันค่อยๆเฟดออกมา */
+}
+
+.full-image{
+    position: absolute;
+    height: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.modal.open{
+    opacity: 1;
+    pointer-events: all;
+}

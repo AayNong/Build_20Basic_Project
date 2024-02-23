@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+*{
+    font-family: "Kanit", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right,#54D2FF ,#F9C74E  ); /* ไล่สี */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin: 30px;
+}
+
+.container{
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 15px 20px;
+    background: none;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+}

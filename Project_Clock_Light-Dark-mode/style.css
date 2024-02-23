@@ -1,0 +1,49 @@
+*{
+    font-family: 'Dancing Script', cursive;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#000; /*เป็นการประกาศตัวแปรสีเพื่อนำไปใช้กับการสลับโหมด*/
+    --secondary-color:#FFF;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.time{
+    font-size: 60px;
+}
+
+.toggle{
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 0;
+    border-radius: 4px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 430px;
+}
+
+html.dark{
+    --primary-color:#FFF; /*พอเปลี่ยนเป็น class dark จะเปลี่ยนสีของ primaryกับ secondary ซึ่ง primary เป็นสีพื้นหลังปุ่ม secondary เป็นสีตัวหนังสือปุ่ม*/
+    --secondary-color:#333;
+}
+
+html.dark{
+    background: #111;
+    color: var(--primary-color);
+}
+
+html{
+    transition: all 0.5s ease-in; /*พอสลับโหมดสีจะค่อยๆเปลี่ยนช้าๆ*/
+}
+
+/*ก็คือถ้า แท็ก html มี class dark มันก็จะเปลี่ยนสีตามที่เรากำหนดไว้*/
